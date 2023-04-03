@@ -1,0 +1,1 @@
+SELECT * FROM {{ ref('first_model') }}
