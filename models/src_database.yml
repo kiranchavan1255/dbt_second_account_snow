@@ -30,6 +30,24 @@ sources:
     schema: RAW
     tables:
       - name: PAYMENT
+      - name: ACCOUNT
+      - name: USER
+
+  - name: SALESFORCE_TABLE_SOURCE
+    database: SALESFORCE_DB
+    schema: STAGE_SCHEMA
+    tables:
+      - name: STG_PAYMENT
+      - name: STG_ACCOUNT
+      - name: STG_USER
+      - name: STG_ORDER
+
+  - name: PC_DBT_DB3
+    database: PC_DBT_DB
+    schema: DBT_KCHAVAN
+    tables:
+      - name: DIM_DATE
+       
 
 
   #         models:
