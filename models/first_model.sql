@@ -1,1 +1,2 @@
-SELECT * FROM {{ source('PC_DBT_DB', 'USER') }}
+
+SELECT * FROM {{ source('PC_DBT_DB', 'ACCOUNT') }}

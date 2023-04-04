@@ -25,6 +25,11 @@ sources:
           - unique
           - not_null
 
+  - name: PC_DBT_DB2
+    database: PC_DBT_DB
+    schema: RAW
+    tables:
+      - name: PAYMENT
 
 
   #         models:

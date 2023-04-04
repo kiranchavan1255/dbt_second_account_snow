@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: USER_DATA
+    database: PC_DBT_DB
+    schema: DBT_KCHAVAN
+    tables:
+      - name: USER1
+      - name: USER2
