@@ -4,7 +4,7 @@
     )
 }}
 
-{% snapshot STG_USER %}
+{% snapshot STG_USER2 %}
 {{
     config(
       target_database='SALESFORCE_DB',
