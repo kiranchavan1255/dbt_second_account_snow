@@ -1,0 +1,29 @@
+version: 2
+
+sources:
+  - name: raw_database
+    database: raw
+    schema: jaffle_shop
+    tables:
+      - name: orders       
+        columns: 
+        - name: ID
+          tests:
+          - unique
+          - not_null
+        - name: status
+          tests:
+          - accepted_values:
+              values:
+                - completed
+                - shipped
+                - returned
+                - return_pending
+                - placed
+      - name: customers       
+        columns: 
+        - name: ID
+          tests:
+          - unique
+          - not_null
+          
